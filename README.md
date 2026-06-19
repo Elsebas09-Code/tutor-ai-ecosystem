@@ -50,4 +50,4 @@ The robot operates under two distinct software architectures depending on the cl
 
 ## ✍️ Author
 
-* **SEBAS-CODE** - *Software Development, ZG SISTEM* - Colombia
+* **SEBAS-CODE** - *Software Development, ZG SYSTEM* - Colombia
