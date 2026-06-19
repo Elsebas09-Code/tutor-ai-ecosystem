@@ -1,0 +1,328 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string nombre;
+    int Grado;
+    string Letra_Grado;
+    int puntaje = 0;
+    string respuesta;
+
+    cout << "Robot: Hello! I am your study assistant. What is your name?" << endl;
+    getline(cin, nombre);
+    cout << "Robot: What grade are you in?" << endl;
+    cin >> Grado;
+    cout << "Robot: What is the specific letter for your grade? " << endl;
+    cin >> Letra_Grado;
+    cin.ignore();
+    cout << "Robot: Are you ready? (yes/no) " << endl;
+    getline(cin, respuesta);
+
+    cout << "Robot: Nice to meet you, " << nombre << ". Let's start by looking at the rules" << endl;
+    cout << "Robot: I will ask you 10 questions about English grammar and vocabulary. Each correct answer will give you 0.5 points. (Acuerdate de que no inicies con espacio y no termines con punto final)" << endl;
+    cout << "Robot: Are you ready? Let's go!" << endl;
+
+    if (Grado == 6) {
+        cout << "Robot: Welcome to the English study assistant for 6th grade!" << endl;
+
+        // PREGUNTAS GRADO 6 
+
+        cout << "Robot: Question 1. What is the plural form of the word \"child\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "children" || respuesta == "Children") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 2. Complete: \"He _____ a doctor.\" (Use the verb to be)" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "is" || respuesta == "Is") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 3. What is the opposite of the adjective \"hot\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "cold" || respuesta == "Cold") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 4. Complete: \"They _____ got a new car.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "have" || respuesta == "Have") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 5. Translate to English: \"Libro\"." << endl;
+        getline(cin, respuesta);
+        if (respuesta == "book" || respuesta == "Book") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 6. Complete: \"We go to school _____ the morning.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "in" || respuesta == "In") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 7. Choose the correct pronoun: \"_____ am a student.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "I" || respuesta == "i") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 8. What color do you get if you mix blue and yellow?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "green" || respuesta == "Green") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 9. Complete: \"She _____ (like) ice cream.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "likes" || respuesta == "Likes") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 10. How do you say \"hola\" in English?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "hello" || respuesta == "hi" || respuesta == "Hello" || respuesta == "Hi") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+    } else if (Grado == 7) {
+        cout << "Robot: Welcome to the English study assistant for 7th grade!" << endl;
+
+        // PREGUNTAS GRADO 7
+
+        cout << "Robot: Question 1. What is the past tense of the verb \"play\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "played" || respuesta == "Played") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 2. Complete: \"She is older _____ her brother.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "than" || respuesta == "Than") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 3. What is the negative form of \"I can swim\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "I cannot swim" || respuesta == "I can't swim" || respuesta == "i cannot swim" || respuesta == "i can't swim") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 4. Complete: \"Where _____ you live?\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "do" || respuesta == "Do") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 5. Translate to English: \"Manzana\"." << endl;
+        getline(cin, respuesta);
+        if (respuesta == "apple" || respuesta == "Apple") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 6. Complete: \"Look at _____ birds up in the sky!\" (Use a demonstrative pronoun for something far and plural)" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "those" || respuesta == "Those") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 7. What is the possessive adjective for \"He\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "his" || respuesta == "His") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 8. Complete: \"There _____ some milk in the fridge.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "is" || respuesta == "Is") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 9. What is the ing form of the verb \"run\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "running" || respuesta == "Running") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 10. Complete: \"I usually wake up _____ 6 o'clock.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "at" || respuesta == "At") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+    } else if (Grado == 8) {
+        cout << "Robot: Welcome to the English study assistant for 8th grade!" << endl;
+
+        // PREGUNTAS GRADO 8 
+
+        cout << "Robot: Question 1. What is the simple past tense of the verb \"Go\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "went" || respuesta == "Went" || respuesta == "WENT") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 2. How would you ask for the amount of something uncountable, like sugar?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "How much sugar do you need?" || respuesta == "How much sugar do you want?" || respuesta == "how much sugar do you need?" || respuesta == "how much sugar do you want?") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 3. What is the comparative form of the adjective \"big\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "bigger" || respuesta == "Bigger" || respuesta == "BIGGER") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 4. Translate: \"Tengo que estudiar\"." << endl;
+        getline(cin, respuesta);
+        if (respuesta == "I have to study" || respuesta == "i have to study") {
+            cout << "Robot: You're on fire!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 5. Fix this sentence: \"She don't like coffee\"." << endl;
+        getline(cin, respuesta);
+        if (respuesta == "She doesn't like coffee" || respuesta == "she doesn't like coffee") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 6. Use \"a\" or \"an\": \"_____ apple\"." << endl;
+        getline(cin, respuesta);
+        if (respuesta == "an" || respuesta == "An" || respuesta == "AN") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 7. Complete: \"They _____ (play) soccer right now.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "are playing" || respuesta == "Are playing") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 8. How do you say \"de ellos\" in English?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "their" || respuesta == "Their" || respuesta == "THEIR") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 9. What is the past simple of \"eat\"?" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "ate" || respuesta == "Ate" || respuesta == "ATE") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+        cout << "Robot: Question 10. Complete with the right preposition: \"I have a meeting _____ Monday.\"" << endl;
+        getline(cin, respuesta);
+        if (respuesta == "on" || respuesta == "On" || respuesta == "ON") {
+            cout << "Robot: Correct!" << endl;
+            puntaje += 1;
+        } else {
+            cout << "Robot: Incorrect." << endl;
+        }
+
+    } else {
+        cout << "Robot: Welcome to the English study assistant!" << endl;
+    }
+
+    double Nota_final = puntaje * 0.5;
+    // Resultado final
+    cout << "Robot: " << nombre << ", your final score is: " << Nota_final << endl;
+    if (Nota_final >= 4.0) {
+        cout << "Robot: Excellent work! You have a great understanding of English." << endl;
+    } else if (Nota_final >= 3.0) {
+        cout << "Robot: Good job! You have a solid grasp of English, but there's room for improvement." << endl;
+    } else {
+        cout << "Robot: Don't worry, " << nombre << ". Keep practicing and you'll get better!" << endl;
+    }
+
+    return 0;
+}
